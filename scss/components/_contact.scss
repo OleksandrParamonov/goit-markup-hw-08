@@ -1,0 +1,33 @@
+.contact {
+    display: flex;
+    margin-left: auto;
+}
+
+.contact .contact__item+.contact__item {
+    margin-left: 50px;
+}
+
+.contact__icons {
+    fill: var(--main-txt-cl);
+    margin-right: 10px;
+    transition: fill var(--animation);
+
+
+&:hover {
+    fill: var(--main-bg-btn-cl);
+}
+}
+
+.contact__link {
+    color: inherit;
+    transition: color var(--animation);
+
+
+&:hover .contact__icons {
+    fill: var(--main-bg-btn-cl);
+}
+
+&:focus .contact__icons {
+    fill: var(--main-bg-btn-cl);
+}
+}

@@ -1,0 +1,10 @@
+.projects {
+  padding-top: 56px;
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 34px;
+  }
+}

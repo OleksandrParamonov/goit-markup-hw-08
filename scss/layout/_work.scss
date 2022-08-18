@@ -1,0 +1,27 @@
+
+.work {
+    padding-top: 0;
+
+
+&__list {
+    --item: 3;
+}
+
+&__item {
+    position: relative;
+}
+
+&__overlay-text {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    padding: 27px;
+    color: var(--white-txt-cl);
+    background-color: rgba(47, 48, 58, 0.8);
+    bottom: 0;
+}
+
+}

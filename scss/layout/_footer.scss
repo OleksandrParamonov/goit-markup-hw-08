@@ -1,0 +1,41 @@
+.footer {
+  --gap: 70px;
+  background-color: var(--dark-bg-cl);
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  & .card-set {
+    align-items: baseline;
+  }
+
+  & .logo {
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+.footer__adress {
+  font-style: inherit;
+  color: rgba(255, 255, 255, 0.6);
+
+  &-item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+
+  &-link {
+    color: inherit;
+  }
+  &-link[target='_blank'] {
+    color: var(--white-txt-cl);
+  }
+}
+
+.footer-link-cl {
+  transition: color var(--animation);
+  &:hover,
+  &:focus {
+    color: var(--white-txt-cl);
+  }
+}
+
+

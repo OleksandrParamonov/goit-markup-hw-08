@@ -1,0 +1,17 @@
+.join {
+  margin: 0;
+  padding: 0;
+
+  &__title {
+    color: var(--white-txt-cl);
+    margin-bottom: 20px;
+  }
+
+  &--grey-bg {
+    background-color: var(--footer-icons-bg-cl);
+  }
+
+  &--fill-white {
+    fill: var(--white-txt-cl);
+  }
+}

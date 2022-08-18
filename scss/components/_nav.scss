@@ -1,0 +1,50 @@
+.nav {
+    display: flex;
+    gap: 93px;
+}
+
+.nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.nav__item {
+    color: var(--black-txt-cl);
+}
+
+.nav__link,
+.contact__link {
+    display: flex;
+    align-items: center;
+    color: var(--black-txt-cl);
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+&--current-blu {
+    position: relative;
+    color: var(--accent-txt-cl);
+}
+
+&--current-blu::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-txt-cl);
+    display: block;
+    border-radius: 2px;
+}
+}
+
+.nav-hover {
+    transition: color var(--animation);
+
+
+&:hover,
+&:focus {
+    color: var(--accent-txt-cl);
+}
+}

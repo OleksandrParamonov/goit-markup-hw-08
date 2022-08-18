@@ -1,0 +1,94 @@
+/*block3*/
+
+
+.hero__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: var(--main-font);
+    background: var(--main-bg-btn-cl);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: none;
+    border-radius: 4px;
+    padding: 10px 32px;
+    transition: background var(--animation);
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.06em;
+    line-height: calc(30 / 16);
+    color: var(--white-txt-cl);
+    cursor: pointer;
+
+
+    &:hover,
+    &:focus {
+        background: var(--bg-btn-cl);
+    }
+}
+
+.footer__button {
+    gap: 10px;
+    padding: 10px 28px;
+
+
+&:hover,
+&:focus {
+    background: var(--bg-btn-cl);
+}
+}
+
+.projects__btn {
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(26 / 16);
+    background: var(--grey-bg-cl);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    border: none;
+    text-align: center;
+    padding: 6px 22px;
+    transition: background-color var(--animation), color var(--animation);
+
+
+&:hover,
+&:focus {
+    background-color: var(--main-bg-btn-cl);
+    color: var(--white-txt-cl);
+}
+}
+
+.backdrop__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: var(--white-bg-cl);
+    cursor: pointer;
+    transition: border-color var(--animation), fill var(--animation);
+
+
+&:hover,
+&:focus {
+    border-color: var(--main-bg-btn-cl);
+    fill: var(--main-bg-btn-cl);
+}
+
+&-icon:hover,
+&-icon:focus {
+    fill: var(--animation);
+}
+}
+
+.form__button {
+    padding: 10px 52px;
+}
