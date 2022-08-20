@@ -29,6 +29,13 @@
       <div class="container header-nav">
         <nav class="nav">
           <a class="logo link" href="/">Web<span class="logo--black">Studio</span></a>
+          <!--Menu-button-->
+          <button class="nav__button is-open" data-menu-button>
+            <svg class="nav__icon" width="40" height="40" aria-label="Перемикач мобільного меню">
+              <use class="nav__icon--menu" href="./images/icons.svg#icon-menu"></use>
+              <use class="nav__icon--close" href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
           <ul class="nav__list list">
             <li class="nav__item">
               <a class="nav__link nav-hover link nav__link--current-blu" href="index.html"
@@ -649,5 +656,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
