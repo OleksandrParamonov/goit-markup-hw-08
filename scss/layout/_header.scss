@@ -1,19 +1,20 @@
 /* block 4 */
 
-
 .header {
-    font-weight: 500;
-    line-height: calc(16 / 14);
-    letter-spacing: 0.02em;
-    border-bottom: 1px solid #ececec;
+  width: 1200px;
+  font-weight: 500;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  border-bottom: 1px solid #ececec;
+}
 
-.header-nav {
+  .header-nav {
     display: flex;
     align-items: center;
-}
+  }
 
-& .logo {
+  & .logo {
     padding-top: 24px;
     padding-bottom: 24px;
-}
-}
+  }
+
