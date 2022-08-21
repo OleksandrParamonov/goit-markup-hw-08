@@ -83,34 +83,6 @@
     fill: var(--animation);
   }
 }
-
-  
-
 .form__button {
   padding: 10px 52px;
 }
-
-.nav__button {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-
-& .nav__icon--close{
-    display: none;
-}
-
-&.is-open .nav__icon--close {
-  display: block;
-}
-
-&.is-open .nav__icon--menu {
-  display: none;
-}
-
-}
-
