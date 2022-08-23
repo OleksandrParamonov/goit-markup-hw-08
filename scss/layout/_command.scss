@@ -5,6 +5,7 @@
   margin-right: auto;
 
   &__item {
+    display: block;
     background-color: var(--white-bg-cl);
     text-align: center;
     flex-basis: calc((100% - 90px) / 4);
@@ -12,7 +13,9 @@
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
   }
-
+  &__img {
+    width: 100%;
+  }
   &__border {
     padding: 30px;
   }
@@ -31,4 +34,9 @@
     line-height: calc(19 / 16);
     margin-bottom: 16px;
   }
+}
+
+.command__list {
+  justify-content: center;
+  align-items: center;
 }

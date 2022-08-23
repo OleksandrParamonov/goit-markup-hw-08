@@ -10,6 +10,8 @@
 
 .customers__list {
   --item: 6;
+  justify-content: center;
+  align-items: center;
 }
 
 .customers__link {
@@ -29,15 +31,12 @@
   }
 }
 
-  .customers__icon {
-      fill: var(--icons-cl);
-      transition: fill var(--animation);
-  
+.customers__icon {
+  fill: var(--icons-cl);
+  transition: fill var(--animation);
 
   .customers__link:hover &,
   .customers__link:focus & {
     fill: var(--main-bg-btn-cl);
   }
 }
-
-

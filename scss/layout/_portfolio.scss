@@ -1,17 +1,22 @@
 .portfolio {
+  --item: 1;
+
+  @media screen and (min-width: 768px) {
+    --item: 2;
+  }
+  @media screen and (min-width: 1200px) {
     --item: 3;
-
-
-&__photo {
+  }
+  &__photo {
     position: relative;
     overflow: hidden;
-}
+  }
 
-&-img {
+  &-img {
     width: 100%;
-}
+  }
 
-&__overlay {
+  &__overlay {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -23,9 +28,9 @@
     left: 0;
     transform: translateY(100%);
     transition: transform var(--animation);
-}
+  }
 
-&__overlay-text {
+  &__overlay-text {
     font-size: 18px;
     line-height: calc(28 / 18);
     color: var(--white-txt-cl);
@@ -35,51 +40,48 @@
     padding-bottom: 63px;
     padding-left: 24px;
     padding-right: 24px;
-}
+  }
 
-
-
-&__border {
+  &__border {
     border: 1px solid #eeeeee;
     border-top: none;
     padding: 20px 24px;
-}
+  }
 
-&__title {
+  &__title {
     font-weight: 700;
     font-size: 18px;
     line-height: calc(36 / 18);
     letter-spacing: 0.06em;
     color: var(--black-txt-cl);
     margin-bottom: 4px;
-}
+  }
 
-&__article {
+  &__article {
     font-size: 16px;
     line-height: calc(30 / 16);
-}
+  }
 }
 
 .portfolio__link {
+  display: block;
+  transition: box-shadow var(--animation);
+
+  &:hover,
+  &:focus {
     display: block;
-    transition: box-shadow var(--animation);
+    border: 1px solid #eeeeee;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
 
+  &:hover .portfolio__overlay {
+    transform: translateY(0%);
+    opacity: 1;
+  }
 
-    &:hover,
-    &:focus {
-        display: block;
-        border: 1px solid #eeeeee;
-        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-            1px 4px 6px rgba(0, 0, 0, 0.16);
-    }
-
-    &:hover .portfolio__overlay {
-        transform: translateY(0%);
-        opacity: 1;
-    }
-
-    &:focus .portfolio__overlay {
-        transform: translateY(0%);
-        opacity: 1;
-    }
+  &:focus .portfolio__overlay {
+    transform: translateY(0%);
+    opacity: 1;
+  }
 }

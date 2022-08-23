@@ -1,14 +1,18 @@
-
 .adventages__icons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 120px;
-    margin-bottom: 30px;
-    background-color: var(--grey-bg-cl);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--grey-bg-cl);
 }
 
 .advantades__title {
-    color: var(--black-txt-cl);
-    margin-bottom: 10px;
+  color: var(--black-txt-cl);
+  margin-bottom: 10px;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    text-align: start;
+  }
 }

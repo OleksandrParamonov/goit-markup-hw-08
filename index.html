@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -25,57 +25,48 @@
 
   <body data-page>
     <!--Шапка профиля-->
-
-     <!--Шапка профиля-->
     <header class="header" data-header>
       <div class="container header-nav">
-          <a class="logo link" href="/">Web<span class="logo--black">Studio</span></a>
-          <!--Menu-button-->
-        <button
-          class="nav__button"
-          data-menu-button
-          aria-controls="menu-container"
-          aria-expanded="false"
-        >
-          <svg class="nav__icon" width="40" height="40" aria-label="Перемикач мобільного меню">
-            <use class="nav__icon--close" href="./images/icons.svg#icon-close"></use>
-            <use class="nav__icon--menu" href="./images/icons.svg#icon-menu"></use>
+        <a class="logo link" href="/">Web<span class="logo--black">Studio</span></a>
+        <button class="menu__btn" type="button" data-menu-open>
+          <svg class="menu__open-icon" width="40px" height="40px">
+            <use href="./images/icons.svg#icon-menu"></use>
           </svg>
         </button>
-        <div class="menu-container" id="menu-container" data-menu>
+        <div class="nav-contacts">
           <nav class="nav">
-          <ul class="nav__list list">
-            <li class="nav__item">
-              <a class="nav__link nav-hover link nav__link--current-blu" href="index.html"
-                >Студія</a
+            <ul class="nav__list list">
+              <li class="nav__item">
+                <a class="nav__link nav-hover link nav__link--current-blu" href="index.html"
+                  >Студія</a
+                >
+              </li>
+              <li class="nav__item">
+                <a class="nav__link nav-hover link" href="portfolio.html">Портфоліо</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link nav-hover link" href="./">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <!--Contacts-->
+
+          <ul class="contact list">
+            <li class="contact__item">
+              <a class="contact__link nav-hover link" href="mailto:info@devstudio.com"
+                ><svg class="contact__icons" width="16px" height="12px">
+                  <use href="./images/icons.svg#mail"></use></svg
+                >info@devstudio.com</a
               >
             </li>
-            <li class="nav__item">
-              <a class="nav__link nav-hover link" href="portfolio.html">Портфоліо</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link nav-hover link" href="./">Контакти</a>
+            <li class="contact__item">
+              <a class="contact__link nav-hover link" href="tel:+380961111111"
+                ><svg class="contact__icons" width="10px" height="16px">
+                  <use href="./images/icons.svg#phone"></use></svg
+                >+38 096 111 11 11</a
+              >
             </li>
           </ul>
-        </nav>
-        <!--Contacts-->
-
-        <ul class="contact list">
-          <li class="contact__item">
-            <a class="contact__link nav-hover link" href="mailto:info@devstudio.com"
-              ><svg class="contact__icons" width="16px" height="12px">
-                <use href="./images/icons.svg#mail"></use></svg
-              >info@devstudio.com</a
-            >
-          </li>
-          <li class="contact__item">
-            <a class="contact__link nav-hover link" href="tel:+380961111111"
-              ><svg class="contact__icons" width="10px" height="16px">
-                <use href="./images/icons.svg#phone"></use></svg
-              >+38 096 111 11 11</a
-            >
-          </li>
-        </ul>
         </div>
       </div>
     </header>
@@ -90,7 +81,7 @@
         </div>
       </section>
 
-      <!--advantades--
+      <!--advantades-->
       <section class="advantades section">
         <div class="container">
           <ul class="advantades__list card-set list">
@@ -142,7 +133,7 @@
         </div>
       </section>
 
-      <!--Work section--
+      <!--Work section-->
       <section class="work section">
         <div class="container">
           <h2 class="section-title">Чим ми займаємося</h2>
@@ -181,13 +172,13 @@
         </div>
       </section>
 
-      <!--Our comand--
+      <!--Our comand-->
 
       <section class="command section">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
           <ul class="command__list card-set list">
-            <li class="command__item card-item">
+            <li class="item command__item card-item">
               <img
                 src="./images/igor.jpg"
                 class="command__img"
@@ -199,9 +190,9 @@
                 <h3 class="command__subtitle">Ігор Дем'яненко</h3>
                 <p class="command__article">Product Designer</p>
 
-                <!--Social-icons 1--
-                <ul class="social card-set list">
-                  <li class="social__item card-item item">
+                <!--Social-icons 1-->
+                <ul class="social list">
+                  <li class="social__item item">
                     <a
                       class="social__link link"
                       href=""
@@ -212,7 +203,7 @@
                         <use href="./images/icons.svg#instagram"></use></svg
                     ></a>
                   </li>
-                  <li class="social__item card-item item">
+                  <li class="social__item item">
                     <a
                       class="social__link link"
                       href=""
@@ -223,7 +214,7 @@
                         <use href="./images/icons.svg#twitter"></use></svg
                     ></a>
                   </li>
-                  <li class="social__item card-item item">
+                  <li class="social__item item">
                     <a
                       class="social__link link"
                       href=""
@@ -234,7 +225,7 @@
                         <use href="./images/icons.svg#facebook"></use></svg
                     ></a>
                   </li>
-                  <li class="social__item card-item item">
+                  <li class="social__item item">
                     <a
                       class="social__link link"
                       href=""
@@ -248,7 +239,7 @@
                 </ul>
               </div>
             </li>
-            <li class="command__item card-item">
+            <li class="item command__item card-item">
               <img
                 src="./images/olga.jpg"
                 class="command__img"
@@ -260,9 +251,9 @@
                 <h3 class="command__subtitle">Ольга Рєпіна</h3>
                 <p class="command__article">Frontend Developer</p>
 
-                <!--Social-icons 2--
-                <ul class="social card-set list">
-                  <li class="social__item card-item item">
+                <!--Social-icons 2-->
+                <ul class="social list">
+                  <li class="social__item item">
                     <a
                       class="social__link link"
                       href=""
@@ -273,7 +264,7 @@
                         <use href="./images/icons.svg#instagram"></use></svg
                     ></a>
                   </li>
-                  <li class="social__item card-item item">
+                  <li class="social__item item">
                     <a
                       class="social__link link"
                       href=""
@@ -284,7 +275,7 @@
                         <use href="./images/icons.svg#twitter"></use></svg
                     ></a>
                   </li>
-                  <li class="social__item card-item item">
+                  <li class="social__item item">
                     <a
                       class="social__link link"
                       href=""
@@ -295,7 +286,7 @@
                         <use href="./images/icons.svg#facebook"></use></svg
                     ></a>
                   </li>
-                  <li class="social__item card-item item">
+                  <li class="social__item item">
                     <a
                       class="social__link link"
                       href=""
@@ -309,7 +300,7 @@
                 </ul>
               </div>
             </li>
-            <li class="command__item card-item">
+            <li class="item command__item card-item">
               <img
                 src="./images/nikolay.jpg"
                 class="command__img"
@@ -321,9 +312,9 @@
                 <h3 class="command__subtitle">Микола Тарасов</h3>
                 <p class="command__article">Marketing</p>
 
-                <!--Social-icons 3--
-                <ul class="social card-set list">
-                  <li class="social__item card-item item">
+                <!--Social-icons 3-->
+                <ul class="social list">
+                  <li class="social__item item">
                     <a
                       class="social__link link"
                       href=""
@@ -334,7 +325,7 @@
                         <use href="./images/icons.svg#instagram"></use></svg
                     ></a>
                   </li>
-                  <li class="social__item card-item item">
+                  <li class="social__item item">
                     <a
                       class="social__link link"
                       href=""
@@ -345,7 +336,7 @@
                         <use href="./images/icons.svg#twitter"></use></svg
                     ></a>
                   </li>
-                  <li class="social__item card-item item">
+                  <li class="social__item item">
                     <a
                       class="social__link link"
                       href=""
@@ -356,7 +347,7 @@
                         <use href="./images/icons.svg#facebook"></use></svg
                     ></a>
                   </li>
-                  <li class="social__item card-item item">
+                  <li class="social__item item">
                     <a
                       class="social__link link"
                       href=""
@@ -370,7 +361,7 @@
                 </ul>
               </div>
             </li>
-            <li class="command__item card-item">
+            <li class="item command__item card-item">
               <img
                 src="./images/michail.jpg"
                 class="command__img"
@@ -382,9 +373,9 @@
                 <h3 class="command__subtitle">Михайло Єрмаков</h3>
                 <p class="command__article">UI Designer</p>
 
-                <!--Social-icons 4--
-                <ul class="social card-set list">
-                  <li class="social__item card-item item">
+                <!--Social-icons 4-->
+                <ul class="social list">
+                  <li class="social__item item">
                     <a
                       class="social__link link"
                       href=""
@@ -395,7 +386,7 @@
                         <use href="./images/icons.svg#instagram"></use></svg
                     ></a>
                   </li>
-                  <li class="social__item card-item item">
+                  <li class="social__item item">
                     <a
                       class="social__link link"
                       href=""
@@ -406,7 +397,7 @@
                         <use href="./images/icons.svg#twitter"></use></svg
                     ></a>
                   </li>
-                  <li class="social__item card-item item">
+                  <li class="social__item item">
                     <a
                       class="social__link link"
                       href=""
@@ -417,7 +408,7 @@
                         <use href="./images/icons.svg#facebook"></use></svg
                     ></a>
                   </li>
-                  <li class="social__item card-item item">
+                  <li class="social__item item">
                     <a
                       class="social__link link"
                       href=""
@@ -435,12 +426,12 @@
         </div>
       </section>
 
-      <!--CUSTOMERS--
+      <!--CUSTOMERS-->
 
       <section class="customers section">
         <h2 class="customers__title">Постійні клієнти</h2>
         <div class="container">
-          <ul class="customers__list card-set">
+          <ul class="customers__list list card-set">
             <li class="customers__item card-item">
               <a
                 href=""
@@ -512,74 +503,77 @@
       </section>
     </main>
 
-    <!--Footer--
+    <!--Footer-->
 
     <footer class="footer">
-      <div class="container card-set">
-        <div class="footer__container">
-          <a class="logo link" href="/"> Web<span class="logo--white">Studio</span></a>
-          <address class="footer__adress">
-            <ul class="footer__adress-list list">
-              <li class="footer__adress-item">
-                <a
-                  class="footer__adress-link link"
-                  href="https://goo.gl/maps/TSJkPxfqwCvXyevN7"
-                  rel="noreferrer noopener"
-                  target="_blank"
-                  >м. Київ, пр-т Лесі Українки, 26</a
-                >
+      <div class="container footer-media">
+        <div class="footer-laptop">
+          <div class="footer__container">
+            <a class="logo link" href="/"> Web<span class="logo--white">Studio</span></a>
+            <address class="footer__adress">
+              <ul class="footer__adress-list list">
+                <li class="footer__adress-item">
+                  <a
+                    class="footer__adress-link link"
+                    href="https://goo.gl/maps/TSJkPxfqwCvXyevN7"
+                    rel="noreferrer noopener"
+                    target="_blank"
+                    >м. Київ, пр-т Лесі Українки, 26</a
+                  >
+                </li>
+                <li class="footer__adress-item">
+                  <a class="footer__adress-link footer-link-cl link" href="mailto:info@example.com"
+                    >info@example.com</a
+                  >
+                </li>
+                <li class="footer__adress-item">
+                  <a class="footer__adress-link footer-link-cl link" href="tel:+380991111111"
+                    >+38 099 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+
+          <!--Join-in-->
+          <div class="join">
+            <h2 class="join__title item-title">приєднуйтесь</h2>
+            <ul class="social list">
+              <li class="social__item">
+                <a href="" class="social__link join--grey-bg">
+                  <svg class="join--fill-white" width="20px" height="20px">
+                    <use href="./images/icons.svg#instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="footer__adress-item">
-                <a class="footer__adress-link footer-link-cl link" href="mailto:info@example.com"
-                  >info@example.com</a
-                >
+              <li class="social__item">
+                <a href="" class="social__link join--grey-bg">
+                  <svg class="join--fill-white" width="20px" height="20px">
+                    <use href="./images/icons.svg#twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="footer__adress-item">
-                <a class="footer__adress-link footer-link-cl link" href="tel:+380991111111"
-                  >+38 099 111 11 11</a
-                >
+              <li class="social__item">
+                <a href="" class="social__link join--grey-bg">
+                  <svg class="join--fill-white" width="20px" height="20px">
+                    <use href="./images/icons.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="" class="social__link join--grey-bg">
+                  <svg class="join--fill-white" width="20px" height="20px">
+                    <use href="./images/icons.svg#linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-        <!--Join-in--
-        <div class="join">
-          <h2 class="join__title item-title">приєднуйтесь</h2>
-          <ul class="social card-set">
-            <li class="social__item">
-              <a href="" class="social__link join--grey-bg">
-                <svg class="join--fill-white" width="20px" height="20px">
-                  <use href="./images/icons.svg#instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a href="" class="social__link join--grey-bg">
-                <svg class="join--fill-white" width="20px" height="20px">
-                  <use href="./images/icons.svg#twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a href="" class="social__link join--grey-bg">
-                <svg class="join--fill-white" width="20px" height="20px">
-                  <use href="./images/icons.svg#facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a href="" class="social__link join--grey-bg">
-                <svg class="join--fill-white" width="20px" height="20px">
-                  <use href="./images/icons.svg#linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
 
-        <!--Footer form--
+        <!--Footer form-->
         <div class="footer__form">
-          <h2 class="join__title item-title">Підпишіться на розсилку</h2>
+          <h2 class="join__title item-title footer__form-title">Підпишіться на розсилку</h2>
           <form class="footer__form-email card-set">
             <label class="footer__label">
               <input class="footer__input" name="Пошта" type="email" placeholder="E-mail" />
@@ -662,6 +656,51 @@
           </label>
           <button class="form__button hero__button" type="submit">Відправити</button>
         </form>
+      </div>
+    </div>
+
+    <!--Mobile-menu-->
+    <div class="menu-overlay" data-menu>
+      <div class="menu-container">
+        <button class="menu__btn--close menu__btn" type="button" data-menu-close>
+          <svg class="menu__close-icon" width="40px" height="40px">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <ul class="mobile__list list">
+          <li class="mobile__item">
+            <a href="./index.html" class="mobile__link mobile__link--blu link">Студія</a>
+          </li>
+          <li class="mobile__item">
+            <a href="./portfolio.html" class="mobile__link link">Портфоліо</a>
+          </li>
+          <li class="mobile__item"><a href="" class="mobile__link link">Контакти</a></li>
+        </ul>
+        <ul class="mobile-contact__list list">
+          <li class="mobile-contact__item"></li>
+          <li class="mobile-contact__item">
+            <a class="mobile-contact__link link" href="+380961111111">+380961111111</a>
+          </li>
+          <a
+            class="mobile-contact__link mobile-contact__link--grey link"
+            href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </ul>
+        <ul class="mobile-social__list list">
+          <li class="mobile-social__item">
+            <a href="" class="mobile-social__link link">Instagram</a>
+          </li>
+          <li class="mobile-social__item">
+            <a href="" class="mobile-social__link link">Twitter</a>
+          </li>
+          <li class="mobile-social__item">
+            <a href="" class="mobile-social__link link">Facebook</a>
+          </li>
+          <li class="mobile-social__item">
+            <a href="" class="mobile-social__link link">LinkedIn</a>
+          </li>
+        </ul>
       </div>
     </div>
     <script src="./js/modal.js"></script>
