@@ -9,21 +9,36 @@
 }
 
 .customers__list {
-  --item: 6;
+  --item: 2;
   justify-content: center;
   align-items: center;
+
+  @media screen and (min-width: 768px) {
+    --item: 3;
+  }
+
+  @media screen and (min-width: 1200px) {
+    --item: 6;
+  }
 }
 
 .customers__link {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 170px;
+  width: 100%;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  padding: 16px 32px;
+  padding: 16px 0px;
   transition: border-color var(--animation);
+
+  @media screen and (min-width: 768px) {
+    padding: 16px 32px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+  }
 
   &:hover,
   &:focus {

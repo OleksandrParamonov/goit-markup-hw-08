@@ -102,12 +102,22 @@
 
   &__text {
     user-select: none;
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: calc(24 / 14);
+    }
   }
 
   &__contract {
     text-decoration: underline;
     color: var(--accent-txt-cl);
     text-underline-position: under;
+  }
+
+  &__icon {
+    flex-shrink: 0;
   }
 }
 
@@ -121,10 +131,10 @@
 }
 
 .checkbox-icon--uncheck {
-.checkbox__input:checked + .checkbox__icon & {
-  opacity: 0;
-  transition: opacity var(--animation);
-}
+  .checkbox__input:checked + .checkbox__icon & {
+    opacity: 0;
+    transition: opacity var(--animation);
+  }
 }
 
 .checkbox__input:checked + .checkbox__icon .checkbox--icon-uncheck:hover,

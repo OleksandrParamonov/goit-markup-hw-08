@@ -93,6 +93,9 @@
 .mobile-contact__list {
   margin-bottom: 64px;
 }
+.mobile-contact__item:not(:last-child) {
+  margin-bottom: 32px;
+}
 
 .mobile-contact__link {
   font-weight: 500;
