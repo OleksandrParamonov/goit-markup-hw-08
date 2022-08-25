@@ -84,8 +84,12 @@ ul {
 
 img {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 
 .list {
