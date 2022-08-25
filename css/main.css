@@ -400,6 +400,16 @@ img {
     padding-bottom: 94px;
   }
 }
+.section-title {
+  font-size: 28px;
+  line-height: 1.1785714286;
+}
+@media screen and (min-width: 1200px) {
+  .section-title {
+    font-size: 36px;
+    line-height: 1.1666666667;
+  }
+}
 
 .item-title {
   font-weight: 700;
@@ -585,6 +595,18 @@ img {
   color: inherit;
   -webkit-transition: color var(--animation);
   transition: color var(--animation);
+}
+@media screen and (min-width: 768px) {
+  .contact__link {
+    font-size: 12px;
+    line-height: 1.1666666667;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact__link {
+    font-size: 14px;
+    line-height: 1.1428571429;
+  }
 }
 .contact__link:hover .contact__icons {
   fill: var(--main-bg-btn-cl);
