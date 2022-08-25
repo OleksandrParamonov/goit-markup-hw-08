@@ -139,33 +139,68 @@
           <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="work__list list card-set">
             <li class="work__item card-item">
-              <img
-                src="./images/work/img1.jpg"
-                class="work__img"
-                alt="Розробка додатків"
-                width="370"
-                height="290"
-              />
-              <h3 class="work__overlay-text item-title">ДЕСКТОПНІ ДОДАТКИ</h3>
-            </li>
-            <li class="work__item card-item">
-              <img
-                src="./images/work/img2.jpg"
-                class="work__img"
-                alt="Розробка мобільних додатків"
-                width="370"
-                height="290"
-              />
+              <!--Desktop screen-->
+              <picture>
+                <source
+                  media="(min-width: 1200px )"
+                  srcset="./images\work\img1@1x_lg.webp 1x, ./images\work\img1@2x_lg.webp 2x"
+                  type="image/webp" />
+                <source
+                  media="(min-width: 1200px )"
+                  srcset="./images\work\img1@1x_lg.jpg 1x, ./images\work\img1@2x_lg.jpg 2x"
+                  type="image/jpg" />
+                <img
+                  src="./images\work\img1@1x_lg.jpg"
+                  class="work__img"
+                  alt="Розробка мобільних додатків"
+                  width="370"
+                  height="290"
+              /></picture>
               <h3 class="work__overlay-text item-title">МОБІЛЬНІ ДОДАТКИ</h3>
             </li>
+
             <li class="work__item card-item">
-              <img
-                src="./images/work/img3.jpg"
-                class="work__img"
-                alt="Розробка дизайну"
-                width="370"
-                height="290"
-              />
+              <!--Desktop screen-->
+              <picture>
+                <source
+                  media="(min-width: 1200px )"
+                  srcset="./images\work\img2@1x_lg.webp 1x, ./images\work\img2@2x_lg.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px )"
+                  srcset="./images\work\img2@1x_lg.jpg 1x, ./images\work\img2@2x_lg.jpg 2x"
+                  type="image/jpg"
+                />
+                <img
+                  src="./images\work\img2@1x_lg.jpg"
+                  class="work__img"
+                  alt="Розробка дизайну"
+                  width="370"
+                  height="290"
+                />
+              </picture>
+              <h3 class="work__overlay-text item-title">ДИЗАЙНЕРСЬКІ РІШЕННЯ</h3>
+            </li>
+
+            <li class="work__item card-item">
+              <!--Desktop screen-->
+              <picture>
+                <source
+                  media="(min-width: 1200px )"
+                  srcset="./images\work\img3@1x_lg.webp 1x, ./images\work\img3@2x_lg.webp 2x"
+                  type="image/webp" />
+                <source
+                  media="(min-width: 1200px )"
+                  srcset="./images\work\img3@1x_lg.jpg 1x, ./images\work\img3@2x_lg.jpg 2x"
+                  type="image/jpg" />
+                <img
+                  src="./images\work\img3@1x_lg.jpg"
+                  class="work__img"
+                  alt="Розробка дизайну"
+                  width="370"
+                  height="290"
+              /></picture>
               <h3 class="work__overlay-text item-title">ДИЗАЙНЕРСЬКІ РІШЕННЯ</h3>
             </li>
           </ul>
@@ -179,13 +214,51 @@
           <h2 class="section-title">Наша команда</h2>
           <ul class="command__list card-set list">
             <li class="item command__item card-item">
-              <img
-                src="./images/command/igor.jpg"
-                class="command__img"
-                alt="Ігор Дем'яненко"
-                width="270"
-                height="260"
-              />
+              <!--Picture tag-->
+              <picture>
+                <!--Desktop screen-->
+                <source
+                  media="(min-width: 1200px )"
+                  srcset="./images\command\igor@1x_lg.webp 1x, ./images\command\igor@2x_lg.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px )"
+                  srcset="./images\command\igor@1x_lg.jpg 1x, ./images\command\igor@2x_lg.jpg 2x"
+                  type="image/jpg"
+                />
+
+                <!--tablet screen-->
+                <source
+                  media="(min-width: 768px )"
+                  srcset="./images\command\igor@1x_md.webp 1x, ./images\command\igor@2x_md.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px )"
+                  srcset="./images\command\igor@1x_md.jpg 1x, ./images\command\igor@2x_md.jpg 2x"
+                  type="image/jpg"
+                />
+                <!--mobile screen-->
+                <source
+                  media="(max-width: 767px )"
+                  srcset="./images\command\igor@1x_sm.webp 1x, ./images\command\igor@2x_sm.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px )"
+                  srcset="./images\command\igor@1x_sm.jpg 1x, ./images\command\igor@2x_sm.jpg 2x"
+                  type="image/jpg"
+                />
+
+                <img
+                  src="./images\command\igor@1x_sm.jpg"
+                  class="command__img"
+                  alt="Ігор Дем'яненко"
+                  width="270"
+                  height="260"
+                />
+              </picture>
               <div class="command__border">
                 <h3 class="command__subtitle">Ігор Дем'яненко</h3>
                 <p class="command__article">Product Designer</p>
@@ -240,13 +313,42 @@
               </div>
             </li>
             <li class="item command__item card-item">
-              <img
-                src="./images/command/olga.jpg"
-                class="command__img"
-                alt="Ольга Рєпіна"
-                width="270"
-                height="260"
-              />
+              <picture
+                ><!--Desktop screen-->
+                <source
+                  media="(min-width: 1200px )"
+                  srcset="./images\command\olga@1x_lg.webp 1x, ./images\command\olga@2x_lg.webp 2x"
+                  type="image/webp" />
+                <source
+                  media="(min-width: 1200px )"
+                  srcset="./images\command\olga@1x_lg.jpg 1x, ./images\command\olga@2x_lg.jpg 2x"
+                  type="image/jpg" />
+
+                <!--tablet screen-->
+                <source
+                  media="(min-width: 768px )"
+                  srcset="./images\command\olga@1x_md.webp 1x, ./images\command\olga@2x_md.webp 2x"
+                  type="image/webp" />
+                <source
+                  media="(min-width: 768px )"
+                  srcset="./images\command\olga@1x_md.jpg 1x, ./images\command\olga@2x_md.jpg 2x"
+                  type="image/jpg" />
+                <!--mobile screen-->
+                <source
+                  media="(max-width: 767px )"
+                  srcset="./images\command\olga@1x_sm.webp 1x, ./images\command\olga@2x_sm.webp 2x"
+                  type="image/webp" />
+                <source
+                  media="(max-width: 767px )"
+                  srcset="./images\command\olga@1x_sm.jpg 1x, ./images\command\olga@2x_sm.jpg 2x"
+                  type="image/jpg" />
+                <img
+                  src="./images\command\olga@1x_sm.jpg"
+                  class="command__img"
+                  alt="Ольга Рєпіна"
+                  width="270"
+                  height="260"
+              /></picture>
               <div class="command__border">
                 <h3 class="command__subtitle">Ольга Рєпіна</h3>
                 <p class="command__article">Frontend Developer</p>
@@ -301,13 +403,67 @@
               </div>
             </li>
             <li class="item command__item card-item">
-              <img
-                src="./images/command/nikolay.jpg"
-                class="command__img"
-                alt="Микола Тарасов"
-                width="270"
-                height="260"
-              />
+              <!--Desktop screen-->
+              <picture>
+                <source
+                  media="(min-width: 1200px )"
+                  srcset="
+                    ./images\command\nikolay@1x_lg.webp 1x,
+                    ./images\command\nikolay@2x_lg.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px )"
+                  srcset="
+                    ./images\command\nikolay@1x_lg.jpg 1x,
+                    ./images\command\nikolay@2x_lg.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <!--tablet screen-->
+                <source
+                  media="(min-width: 768px )"
+                  srcset="
+                    ./images\command\nikolay@1x_md.webp 1x,
+                    ./images\command\nikolay@2x_md.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px )"
+                  srcset="
+                    ./images\command\nikolay@1x_md.jpg 1x,
+                    ./images\command\nikolay@2x_md.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!--mobile screen-->
+                <source
+                  media="(max-width: 767px )"
+                  srcset="
+                    ./images\command\nikolay@1x_sm.webp 1x,
+                    ./images\command\nikolay@2x_sm.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px )"
+                  srcset="
+                    ./images\command\nikolay@1x_sm.jpg 1x,
+                    ./images\command\nikolay@2x_sm.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  src="./images\command\nikolay@1x_sm"
+                  class="command__img"
+                  alt="Микола Тарасов"
+                  width="270"
+                  height="260"
+                />
+              </picture>
               <div class="command__border">
                 <h3 class="command__subtitle">Микола Тарасов</h3>
                 <p class="command__article">Marketing</p>
@@ -362,13 +518,67 @@
               </div>
             </li>
             <li class="item command__item card-item">
-              <img
-                src="./images/command/michail.jpg"
-                class="command__img"
-                alt="Михайло Єрмаков"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <!--desktop screen-->
+                <source
+                  media="(min-width: 1200px )"
+                  srcset="
+                    ./images\command\michail@1x_lg.webp 1x,
+                    ./images\command\michail@2x_lg.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px )"
+                  srcset="
+                    ./images\command\michail@1x_lg.jpg 1x,
+                    ./images\command\michail@2x_lg.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <!--tablet screen-->
+                <source
+                  media="(min-width: 768px )"
+                  srcset="
+                    ./images\command\michail@1x_md.webp 1x,
+                    ./images\command\michail@2x_md.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px )"
+                  srcset="
+                    ./images\command\michail@1x_md.jpg 1x,
+                    ./images\command\michail@2x_md.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!--mobile screen-->
+                <source
+                  media="(max-width: 767px )"
+                  srcset="
+                    ./images\command\michail@1x_sm.webp 1x,
+                    ./images\command\michail@2x_sm.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px )"
+                  srcset="
+                    ./images\command\michail@1x_sm.jpg 1x,
+                    ./images\command\michail@2x_sm.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  src="./images\command\michail@1x_sm.jpg"
+                  class="command__img"
+                  alt="Михайло Єрмаков"
+                  width="270"
+                  height="260"
+                />
+              </picture>
               <div class="command__border">
                 <h3 class="command__subtitle">Михайло Єрмаков</h3>
                 <p class="command__article">UI Designer</p>
